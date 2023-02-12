@@ -1,3 +1,6 @@
+document.body.style.backgroundColor = "#00BFFF";
+
+
 const skills = [
     {
       name: "Programming",
@@ -29,4 +32,13 @@ const skills = [
     `;
     skillsContainer.appendChild(skillDiv);
   }
+  // This change the product link to projects
+let link = document.getElementById("productsLink");
+
+// Create a new text node with the text "projects"
+let newText = document.createTextNode("Projects");
+
+// Replace the current content of the link with the new text node
+link.innerHTML = "";
+link.appendChild(newText);
   
