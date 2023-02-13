@@ -1,5 +1,6 @@
+//sets the background colour and image
 document.body.style.backgroundColor = "#00BFFF";
-document.body.style.backgroundImage = "url('images/image.jpg')";
+document.body.style.backgroundImage = "url('images/back.jpg')";
 
 // Get the content div and title element from the DOM
 const content = document.getElementById("content");
@@ -19,25 +20,34 @@ On this website, you will find a portfolio of our projects, including web applic
 If you have any questions or just want to connect, feel free to reach out to us through the contact form on this website. We would love to hear from you!
 
 Thank you for visiting our website, and we hope you enjoy exploring what we have to offer. <br/>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/riya-panchal-a093a2233/" target="_blank">https://www.linkedin.com/in/riya-panchal-a093a2233/</a></br>
+LinkedIn: <a href="https://www.linkedin.com/in/yudhistirgnawali" target="_blank">https://www.linkedin.com/in/yudhistirgnawali</a></p>`;
 
-<p>LinkedIn account link: </p>`;
+
 
 // Add the content to the page
 content.innerHTML = text;
 
 const imgElement = document.createElement("img");
-imgElement.src = "images/Prem.jpg";
+imgElement.src = "images/mee.jpg";
 imgElement.alt = "Your image description";
 imgElement.style.width = "200px";
 imgElement.style.height = "200px";
 imgElement.style.borderRadius = "20%";
 imgElement.style.margin = "50px";
-
-
-
-
 const parentElement = document.querySelector("#image-container");
 parentElement.appendChild(imgElement);
+
+const anotherImgElement = document.createElement("img");
+anotherImgElement.src = "images/riya.jpg";
+anotherImgElement.alt = "Another image description";
+anotherImgElement.style.width = "200px";
+anotherImgElement.style.height = "200px";
+anotherImgElement.style.borderRadius = "20%";
+anotherImgElement.style.margin = "50px";
+parentElement.appendChild(anotherImgElement);
+
+
 
 
 // Bottom Copy right Navbar
@@ -46,7 +56,7 @@ const year = date.getFullYear();
 const copyrightText = `&copy; Copyright ${year}`;
 
 const bottomNavbar = `
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div class="container-fluid">
     <span class="navbar-text mr-auto">
       ${copyrightText}

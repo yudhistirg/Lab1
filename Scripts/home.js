@@ -1,5 +1,6 @@
+//sets the background colour and image
 document.body.style.backgroundColor = "#00BFFF";
-document.body.style.backgroundImage = "url('images/background.j')";
+document.body.style.backgroundImage = "url('images/back.jpg')";
 // javascript for home page
 const welcomeSection = document.getElementById("welcome-section");
 welcomeSection.style.backgroundImage = "img src='./images/background.webp'";
@@ -42,7 +43,7 @@ const year = date.getFullYear();
 const copyrightText = `&copy; Copyright ${year}`;
 
 const bottomNavbar = `
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <span class="navbar-text mr-auto">
             ${copyrightText}

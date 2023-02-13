@@ -1,5 +1,6 @@
+//sets the background colour and image
 document.body.style.backgroundColor = "#00BFFF";
-document.body.style.backgroundImage = "url('images/image.jpg')";
+document.body.style.backgroundImage = "url('images/back.jpg')";
 
 console.log("JS script wirred in");
 
@@ -13,13 +14,21 @@ function timedRedirect()
     console.log("Name: " + name + "\nContact Number: " + number + "\nEmail Address: " + email + "\nShort Message: " + message);
     e.preventDefault();
     setTimeout(function () {
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     }, 3000)
 }
 
-// After clicking the button, redirect to the index.html page
+// After clicking the button, redirect to the home.html page
+//let submitButton = document.getElementById('submit-btn');
+//if (submitButton) { submitButton.addEventListener('click', timedRedirect); }
+
 let submitButton = document.getElementById('submit-btn');
-if (submitButton) { submitButton.addEventListener('click', timedRedirect); }
+if (submitButton) {
+  submitButton.addEventListener('click', function() {
+    window.location.href = 'home.html';
+  });
+}
+
 
 
 // Bottom Copy right Navbar
@@ -28,7 +37,7 @@ const year = date.getFullYear();
 const copyrightText = `&copy; Copyright ${year}`;
 
 const bottomNavbar = `
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <span class="navbar-text mr-auto">
       ${copyrightText}
