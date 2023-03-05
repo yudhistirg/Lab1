@@ -1,3 +1,12 @@
+/*
+Name: Yudhistir Gnawali and Riya Panchal
+  Website: jQuery & Form Validation
+  Date: 3/4/2023
+  Description: Created for a course requirement of webd6201 at durham college.
+  Github: https://github.com/yudhistirg/Lab2
+
+*/
+
 document.body.style.backgroundColor = "#Ba9de8";
 document.body.style.backgroundImage = "url('images/back.jpg')";
 

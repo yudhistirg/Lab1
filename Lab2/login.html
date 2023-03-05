@@ -1,3 +1,11 @@
+<!--
+  Name: Yudhistir Gnawali and Riya Panchal
+  Website: jQuery & Form Validation
+  Date: 3/4/2023
+  Description: Created for a course requirement of webd6201 at durham college.
+  Github: https://github.com/yudhistirg/Lab2
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,13 +13,9 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-OgjK2+gHxJf+LhGcC6yfrQlnUxtO6K51m6FJg1lllNBwHUMI8Js+7K9R5YPgsy7VWpK8egv7N3ZLAt3Zz1W0cg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://kit.fontawesome.com/32ba747560.js" crossorigin="anonymous"></script>
 	<!-- Custom CSS -->
-	<style>
-		.navbar-text + li {
-			margin-left: 20px;
-		}
-	</style>
+	<link rel="stylesheet" href="./Content/app.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,14 +43,15 @@
 	<div class="container">
 		<form>
 			<div class="form-group">
-				<label for="username">Username</label>
-				<input type="text" class="form-control" id="username" placeholder="Enter username">
+				<label for="username"><i class="fas fa-user"></i> Username</label>				<input type="text" class="form-control" id="username" placeholder="Enter username">
 			</div>
 			<div class="form-group">
-				<label for="password">Password</label>
-				<input type="password" class="form-control" id="password" placeholder="Password">
+				<label for="password"><i class="fas fa-lock"></i> Password</label>				<input type="password" class="form-control" id="password" placeholder="Password">
 			</div>
 			<button type="submit" class="btn btn-primary" id="login-btn">Login</button>
+			<div class="mt-3">
+				<p>Don't have an account? <a href="./register.html">Register now</a></p>
+			</div>
 		</form>
 	</div>
 
