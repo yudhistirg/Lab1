@@ -220,6 +220,33 @@
                 break;
         }
     }
+    function toggleLogin() {
+        const navList = document.getElementById('nav-list');
+      
+        if (isLoggedIn()) {
+          // show task-list link
+          const taskListLink = document.createElement('a');
+          taskListLink.href = 'Views/content/task-list';
+          taskListLink.innerHTML = '<i class="fas fa-tasks"></i> Task List';
+          taskListLink.classList.add('nav-link');
+          navList.appendChild(taskListLink);
+        } else {
+          // hide task-list link
+          const taskListLink = navList.querySelector('a[href="Views/content/task-list"]');
+          if (taskListLink) {
+            navList.removeChild(taskListLink);
+          }
+        }
+      
+        // show or hide content based on login status
+        const contentDiv = document.getElementById('content');
+        if (isLoggedIn()) {
+          contentDiv.innerHTML = '<app-task-list></app-task-list>';
+        } else {
+          contentDiv.innerHTML = '';
+        }
+      }
+      
     
       
       
@@ -236,6 +263,7 @@
             });
         }
     }
+    
     
     
       
@@ -308,6 +336,9 @@
             return new Function();
         }
       }
+      window.onload = function() {
+        toggleLogin();
+      };
       
     function Start() {
         console.log("App Started!");

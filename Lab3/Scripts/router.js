@@ -56,7 +56,8 @@ function authGuard() {
     return false;
   }
 }
-
+// the router will match it to the corresponding
+// route in the routing table and display the component associated with that route.
 router.AddTable([
   {
     route: "/",
